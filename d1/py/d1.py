@@ -5,4 +5,4 @@ with open('../input.txt', 'r') as f:
     results = list(map(int,content))
 
     final = reduce(lambda x, y: x + y, results)
-    print(final)
+    print(f"The sum is: {final}")
