@@ -16,8 +16,14 @@ readFile('../data.txt')
           return a + (c === charsJ[i] ? 0 : 1)
         }, 0)
         if (diff === 1) {
-          console.log(arr[i])
-          console.log(arr[j])
+          
+          let ans = [] 
+          charsI.forEach((ch, i)=>{
+            if (ch == charsJ[i]) {
+              ans.push(ch)
+            }
+          })
+          console.log(`The shared values: ${ans.join('')}`)
         }
       }
     }
